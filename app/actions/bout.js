@@ -5,7 +5,6 @@ import uuid from 'uuid/v4';
 import { createTimer } from './timer';
 import type { Dispatch } from '../utils/redux-thunk';
 
-const foo = 'barsf';
 const create = createAction('BOUT_CREATE');
 export const joinBout = createAction('BOUT_JOIN');
 export const createBout = (name: string) => (dispatch: Dispatch) => {
