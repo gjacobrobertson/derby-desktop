@@ -14,5 +14,12 @@
     "postinstall": "npm run electron-rebuild"
   },
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "redux-actions": "^2.2.1",
+    "semantic-ui-css": "^2.2.14",
+    "semantic-ui-react": "^0.78.1",
+    "sntp": "^3.0.1",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {}
 }

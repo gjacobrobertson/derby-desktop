@@ -1,21 +1,13 @@
 // @flow
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Home.css';
+import { Button } from 'semantic-ui-react';
 
-type Props = {};
+const Home = () => (
+  <div data-tid="container">
+    <Button as={Link} to="/bout/new">Host Bout</Button>
+    <Button as={Link} to="/bout">Join Bout</Button>
+  </div>
+);
 
-export default class Home extends Component<Props> {
-  props: Props;
-
-  render() {
-    return (
-      <div>
-        <div className={styles.container} data-tid="container">
-          <h2>Home</h2>
-          <Link to="/counter">to Counter</Link>
-        </div>
-      </div>
-    );
-  }
-}
+export default Home;
